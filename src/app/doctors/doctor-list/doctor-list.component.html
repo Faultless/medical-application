@@ -6,7 +6,7 @@
 <div class="row">
   <div class="col-xs-12">
     <div class="list-group">
-      <mb-doctor-item [doctor]="doctor" (click)="onSelected(doctor)"></mb-doctor-item>
+      <mb-doctor-item *ngFor="let doctor of doctors" [doctor]="doctor" (click)="onSelected(doctor)"></mb-doctor-item>
     </div>
   </div>
 </div>
