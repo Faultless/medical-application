@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <mb-doctor-list (doctorSelected)="selectedDoctor = $event"></mb-doctor-list>
+    </div>
+    <div class="col-md-7">
+      <mb-doctor-detail [selectedDoctor]="selectedDoctor"></mb-doctor-detail>
+    </div>
+  </div>
+</div>

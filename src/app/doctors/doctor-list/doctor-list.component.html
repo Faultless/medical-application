@@ -1,0 +1,12 @@
+<div class="row m-b-2">
+  <div class="col-xs-12">
+    <button class="btn btn-outline-success" type="button">New Doctor</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="list-group">
+      <mb-doctor-item [doctor]="doctor" (click)="onSelected(doctor)"></mb-doctor-item>
+    </div>
+  </div>
+</div>
